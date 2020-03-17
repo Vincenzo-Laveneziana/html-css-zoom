@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: black;
+    color: white;
+
+}
+
+/* utility */
+.text_center{
+  text-align: center;
+}
+
+
+/* LAYOUT */
+#zoom-app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* top bar */
+#top-bar{
+  width: 100%;
+  background: #444;
+
+}
+
+
+
+
+
+/* main window */
+#main-window{
+  width: 1600px;
+  max-width: 100%;
+  flex-grow: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#main-window .user{
+  flex-basis: 25%;
+  background: #666;
+  border: 3px solid black;
+
+}
+
+
+
+/* action bar */
+#action-bar{
+  background: #333;
+}

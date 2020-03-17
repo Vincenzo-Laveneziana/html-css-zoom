@@ -35,7 +35,7 @@ body{
 /* top bar */
 #top-bar{
   width: 100%;
-  padding: 5px 0 25px;
+  padding: 5px 15px 25px;
   font-size: 12px;
 }
 
@@ -47,6 +47,29 @@ body{
   border: 4px solid transparent;
   border-top-color: white;
 }
+
+#top-bar .options{
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+#top-bar .options a{
+  display: inline-block;
+  padding: 4px 6px;
+  margin: 4px;
+  text-decoration: none;
+  color: white;
+  background: #333;
+  border-radius: 5px;
+}
+
+
+#top-bar .options a:hover{
+  color: red;
+}
+
+
 
 /* main window */
 #main-window{
@@ -64,7 +87,7 @@ body{
   flex-basis: 25%;
   background: #666;
   border: 5px solid black;
-  transition: border .3s;
+  transition: all 0.5s;
 }
 
 #main-window .user:hover{

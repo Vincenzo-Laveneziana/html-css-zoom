@@ -1,13 +1,13 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background: black;
-    color: white;
+  font-family: 'Roboto', sans-serif;
+  background: black;
+  color: white;
 
 }
 
@@ -64,7 +64,6 @@ body{
   border-radius: 5px;
 }
 
-
 #top-bar .options a:hover{
   color: red;
 }
@@ -76,7 +75,6 @@ body{
   width: 1600px;
   max-width: 100%;
   flex-grow: 1;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -152,8 +150,6 @@ body{
   /* margin-left: 15px; */
 }
 
-
-
 .list_inline li a{
   color: white;
   font-size: 20px;
@@ -164,11 +160,84 @@ body{
   font-size: 12px;
 }
 
-
 .end_button a{
   text-decoration: none;
   color: #c91414;
   font-size: 15px;
 }
+
+
+
+/* small screen */
+
+@media screen and (max-width: 576px) {
+  #top-bar span{
+    font-size: 15px;
+  }
+
+  #main-window .user{
+    flex-basis: 50%;
+    height: 200px;
+  }
+
+  #action-bar{
+    padding: 0;
+    width: 100%;
+    background: #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #top-bar .options{
+    position: relative;
+    padding: 10px 0 0;
+  }
+
+  .self_action{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .chat_actions{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .end_button{
+    flex-basis: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+ }
+
+
+/* medium screen */
+ @media screen and (min-width: 577px) and (max-width: 1199px) {
+
+   #top-bar span{
+     font-size: 15px;
+   }
+
+   #main-window .user{
+     flex-basis: calc(100% / 3);
+     height: 200px;
+   }
+
+   #action-bar{
+     padding: 5px 0;
+     width: 100%;
+     background: #333;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   }
+
+ }
+
 
 /*  */

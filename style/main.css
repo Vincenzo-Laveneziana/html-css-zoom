@@ -16,6 +16,12 @@ body{
   text-align: center;
 }
 
+.list_inline{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
 
 /* LAYOUT */
 #zoom-app{
@@ -41,10 +47,6 @@ body{
   border: 4px solid transparent;
   border-top-color: white;
 }
-
-
-
-
 
 /* main window */
 #main-window{
@@ -95,7 +97,6 @@ body{
 
 #main-window .user .name_user .status i{
   color: red;
-
 }
 
 #main-window .user .name_user:hover i{
@@ -103,11 +104,48 @@ body{
 }
 
 
-
-
 /* action bar */
 #action-bar{
   width: 100%;
-  padding: 15px;
   background: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
+
+.list_inline li{
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_inline li:hover{
+  background: #4d4d4d;
+}
+
+.list_inline li:not(:first-child){
+  /* margin-left: 15px; */
+}
+
+
+
+.list_inline li a{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.list_inline li span{
+  font-size: 12px;
+}
+
+
+.end_button a{
+  text-decoration: none;
+  color: #c91414;
+  font-size: 15px;
+}
+
+/*  */

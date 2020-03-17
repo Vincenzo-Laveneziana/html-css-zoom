@@ -58,10 +58,11 @@ body{
 }
 
 #main-window .user{
+  position: relative;
   flex-basis: 25%;
   background: #666;
   border: 5px solid black;
-  position: relative;
+  transition: border .3s;
 }
 
 #main-window .user:hover{
@@ -76,6 +77,31 @@ body{
   height: 100%;
   object-fit: cover;
 }
+
+#main-window .user .name_user{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#main-window .user .name_user .status{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 10px;
+  background: #2d2d2d;
+  padding: 2px 5px;
+}
+
+#main-window .user .name_user .status i{
+  color: red;
+
+}
+
+#main-window .user .name_user:hover i{
+  display: none;
+}
+
 
 
 
